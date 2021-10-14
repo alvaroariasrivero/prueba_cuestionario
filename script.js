@@ -10,8 +10,8 @@ function incorrect() {
 async function getQ() {
   try {
     let response = await fetch('https://opentdb.com/api.php?amount=10&category=11&type=multiple')
-    console.log(response)
     let data = await response.json()
+    console.log(data)
     let ronda = await data.results[0]
     let correcta = ronda.correct_answer
     let incorrecta = ronda.incorrect_answers
@@ -19,7 +19,9 @@ async function getQ() {
     let objQue = {
       question: pregunta,
       correct: correcta,
-      incorrect: incorrecta
+      incorrect1: incorrecta[0],
+      incorrect2: incorrecta[1],
+      incorrect3: incorrecta[2]
     }
     console.log(objQue)
     
