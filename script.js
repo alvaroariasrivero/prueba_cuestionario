@@ -47,7 +47,6 @@ async function getQ() {
       }
       questions.push(objQue)
       
-      
        let impreso = `<h4>${questions[questions.length-1].question}</h4>
                      <input type="radio" id="correcta">
                      <label for="correcta">${questions[questions.length-1].respuestas[0]}</label>
@@ -59,11 +58,34 @@ async function getQ() {
                      <label for="incorrecta3">${questions[questions.length-1].respuestas[3]}</label>`
                      document.getElementById("pregunta"+(questions.length-1)).innerHTML = impreso;
     })
-    console.log(questions) 
-  } catch {}
+    console.log("la primera es la buena", questions) 
+  } catch {
+    console.log("error")
+  }
 }
 
 getQ()
+
+    // const rand = (max, min) => Math.floor(Math.random() * (max - min)) + min
+
+    
+    // const random = () => {
+    //   let arrRandom = []
+    //   const recursive = () => {
+    //     const randomNumber = Math.floor(Math.random() * (4 - 0)) + 0
+    //     if (arrRandom.includes(randomNumber) == false){
+    //       arrRandom.push(randomNumber)
+    //       console.log(randomNumber)
+    //     } else {
+    //       console.log("pasa por la recursiva")
+    //       recursive()
+    //     }
+    //   }
+    //   for (let i = 0; i < 4; i++ ) {
+    //     recursive()
+    //   } return arrRandom
+    // }
+
 
 
 // fetch('https://opentdb.com/api.php?amount=10')
