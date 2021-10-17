@@ -1,10 +1,10 @@
-function correct() {
-    alert("respuesta correcta")
-  }
+// function correct() {
+//     alert("respuesta correcta")
+//   }
 
-function incorrect() {
-    alert("respuesta incorrecta")
-}
+// function incorrect() {
+//     alert("respuesta incorrecta")
+// }
 
 
 // async function getQ() {
@@ -45,15 +45,24 @@ async function getQ() {
         }
       
         return `<li>
-                  <h4>${objQue.question}</h4>
-                  <input type="radio" id="correcta">
-                  <label for="correcta">${objQue.respuestas[0]}</label>
-                  <input type="radio" id="incorrecta1">
-                  <label for="incorrecta1">${objQue.respuestas[1]}</label>
-                  <input type="radio" id="incorrecta2">
-                  <label for="incorrecta2">${objQue.respuestas[2]}</label>
-                  <input type="radio" id="incorrecta3">
-                  <label for="incorrecta3">${objQue.respuestas[3]}</label>
+                  <legend>${objQue.question}</legend>
+                  <div class="rojo">
+                    <input type="radio" id="correcta">
+                    <label for="correcta">${objQue.respuestas[0]}</label>
+                  </div>
+                  <div class="verde">
+                    <input type="radio" id="incorrecta1">
+                    <label for="incorrecta1" >${objQue.respuestas[1]}</label>
+                  </div>
+                  <div class="amarillo">
+                    <input type="radio" id="incorrecta2">
+                    <label for="incorrecta2" >${objQue.respuestas[2]}</label>
+                  </div>
+                  <div class="morado">
+                    <input type="radio" id="incorrecta3">
+                    <label for="incorrecta3">${objQue.respuestas[3]}</label>
+                  </div>
+                  <button type="button">Siguiente</button>
                 </li>`           
       }).join("")
       
