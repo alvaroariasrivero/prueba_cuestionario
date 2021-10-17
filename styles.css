@@ -48,6 +48,19 @@ button {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #24CFE0;
+}
+
+button:focus {
+    background-color: #28FC5D;
+}
+
+label {
+    cursor: pointer;
 }
 
 .rojo {

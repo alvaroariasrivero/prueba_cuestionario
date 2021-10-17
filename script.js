@@ -66,7 +66,7 @@ async function getQ() {
                       <label for="incorrecta3">${objQue.respuestas[3]}</label>
                     </div>
                   </div>
-                  <button type="button">Siguiente</button>
+                  <button type="button" id="boton">Siguiente</button>
                 </li>`           
       }).join("")
       
@@ -78,6 +78,9 @@ async function getQ() {
 }
 
 getQ()
+
+const submitBtn = document.getElementById("boton")
+
 
 
 
