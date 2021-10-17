@@ -66,7 +66,7 @@ async function getQ() {
                       <label for="incorrecta3">${objQue.respuestas[3]}</label>
                     </div>
                   </div>
-                  <button type="button" id="boton">Siguiente</button>
+                  <button type="button" id="boton">NEXT</button>
                 </li>`           
       }).join("")
       
