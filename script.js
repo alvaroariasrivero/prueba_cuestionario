@@ -45,22 +45,26 @@ async function getQ() {
         }
       
         return `<li>
-                  <legend>${objQue.question}</legend>
-                  <div class="rojo">
-                    <input type="radio" id="correcta">
-                    <label for="correcta">${objQue.respuestas[0]}</label>
+                  <legend><b>${objQue.question}</b></legend>
+                  <div class="contenido">
+                    <div class="box rojo">
+                      <input type="radio" id="correcta" name="answer">
+                      <label for="correcta">${objQue.respuestas[0]}</label>
+                    </div>
+                    <div class="box verde">
+                      <input type="radio" id="incorrecta1" name="answer">
+                      <label for="incorrecta1" >${objQue.respuestas[1]}</label>
+                    </div>
                   </div>
-                  <div class="verde">
-                    <input type="radio" id="incorrecta1">
-                    <label for="incorrecta1" >${objQue.respuestas[1]}</label>
-                  </div>
-                  <div class="amarillo">
-                    <input type="radio" id="incorrecta2">
-                    <label for="incorrecta2" >${objQue.respuestas[2]}</label>
-                  </div>
-                  <div class="morado">
-                    <input type="radio" id="incorrecta3">
-                    <label for="incorrecta3">${objQue.respuestas[3]}</label>
+                  <div class="contenido">
+                    <div class="box amarillo">
+                      <input type="radio" id="incorrecta2" name="answer">
+                      <label for="incorrecta2" >${objQue.respuestas[2]}</label>
+                    </div>
+                    <div class="box morado">
+                      <input type="radio" id="incorrecta3" name="answer">
+                      <label for="incorrecta3">${objQue.respuestas[3]}</label>
+                    </div>
                   </div>
                   <button type="button">Siguiente</button>
                 </li>`           
@@ -75,7 +79,10 @@ async function getQ() {
 
 getQ()
 
-    // const rand = (max, min) => Math.floor(Math.random() * (max - min)) + min
+
+
+
+// const rand = (max, min) => Math.floor(Math.random() * (max - min)) + min
 
     
     // const random = () => {
